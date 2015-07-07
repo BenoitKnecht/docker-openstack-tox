@@ -8,4 +8,4 @@ RUN pip install tox
 
 WORKDIR $HOME
 
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["/bin/bash"]
