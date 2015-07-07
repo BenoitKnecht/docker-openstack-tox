@@ -6,6 +6,8 @@ RUN apk --update add bash gcc git graphviz libffi-dev libvirt-dev libxml2-dev \
                      sqlite-dev
 RUN pip install tox
 
+COPY bash.bashrc /etc/
+
 WORKDIR /root
 
 ENTRYPOINT ["/bin/bash"]
